@@ -39,7 +39,7 @@ repo. `docker compose up -d` gives you a fully configured stack with nothing to 
 Every arrow is a **pull**. Grafana queries Prometheus, Prometheus scrapes the exporters,
 and the exporter logs into MySQL. Nothing pushes upward.
 
-MySQL speaks SQL, not Prometheus — `mysql-exporter` is the translation layer that runs
+MySQL speaks SQL, not Prometheus - `mysql-exporter` is the translation layer that runs
 `SHOW GLOBAL STATUS` and re-exposes the results as metrics.
 
 ## Requirements
